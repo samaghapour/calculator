@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+        <link rel="preconnect" href="https://fonts.gstatic.com">
+        <link rel="stylesheet" href="style.css">
+        <script src="app.js" defer></script>
+        <title>Sam Calculator</title>
+    </head>
+    <body>
+
+        <div id="calculator">
+            <!-- results div for previous number and current number -->
+            <div class="results">
+                <div id="previous"></div>
+                <div id="current"></div>
+            </div>
+
+            <!-- buttons -->
+            <div
+                class="buttons">
+                <!-- switch theme -->
+                <div class="switchBox">
+                    <label class="switch">
+                        <input type="checkbox" id="swithTheme">
+                        <span class="slider"></span>
+                    </label>
+                    <h4>switch to dark theme</h4>
+                </div>
+
+                <!-- numbers -->
+                <div class="numbers-box">
+                    <button class="operation">+</button>
+                    <button class="operation">-</button>
+                    <button class="operation">×</button>
+                    <button class="operation">÷</button>
+                    <button class="numbers">9</button>
+                    <button class="numbers">8</button>
+                    <button class="numbers">7</button>
+                    <button class="operation">√</button>
+                    <button class="numbers">6</button>
+                    <button class="numbers">5</button>
+                    <button class="numbers">4</button>
+                    <button class="operation">%</button>
+                    <button class="numbers">3</button>
+                    <button class="numbers">2</button>
+                    <button class="numbers">1</button>
+                    <button id="clear">C</button>
+                    <button class="numbers">.</button>
+                    <button class="numbers">0</button>
+                    <button id="backspaceBtn">
+                        X
+                    </button>
+                    <button id="result">=</button>
+                </div>
+            </div>
+
+
+        </div>
+    </body>
+</html>

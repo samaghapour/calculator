@@ -1,0 +1,190 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: 'Roboto', sans-serif;
+    width: 100vw;
+    height: 100vh;
+    background: #c9c9c9;
+    position: relative;
+}
+
+#calculator{
+    width: 25%;
+    min-height: 75vh;
+    position: absolute; top: 50%; left: 50%;
+    transform: translate(-50%,-50%);
+    overflow: hidden;
+    border-radius: 20px;
+    background: #c9c9c9;
+    box-shadow:  11px 11px 38px #ababab,
+                -11px -11px 38px #e7e7e7;
+    
+}
+@media screen and (max-width: 380px) {
+  #calculator{
+      width: 55%;
+  }
+}
+@media screen and (max-width: 600px) {
+    #calculator{
+        width: 55%;
+    }
+}
+@media screen and (max-width: 900px) {
+    #calculator{
+        width: 55%;
+    }
+}
+/* switch button */
+/* The switch - the box around the slider */
+.switch {
+    position: relative;
+    display: inline-block;
+    width: 20%;
+  }
+  
+  /* Hide default HTML checkbox */
+  .switch input {
+    opacity: 0;
+    width: 0;
+    height: 0;
+  }
+  
+  /* The slider */
+  .slider {
+    position: absolute;
+    cursor: pointer;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: #a0a0a0;
+    -webkit-transition: .4s;
+    transition: .4s;
+    border-radius: 34px;
+    height: 27px;
+    width: 50px;
+  }
+  
+  .slider:before {
+    position: absolute;
+    content: "";
+    height: 20px;
+    width: 20px;
+    left: 4px;
+    bottom: 4px;
+    background-color: white;
+    -webkit-transition: .4s;
+    transition: .4s;
+    border-radius: 50%;
+  }
+  
+  input:checked + .slider {
+    background-color: #232425;
+  }
+  
+  input:focus + .slider {
+    box-shadow: 0 0 1px #262727;
+  }
+  
+  input:checked + .slider:before {
+    -webkit-transform: translateX(23px);
+    -ms-transform: translateX(23px);
+    transform: translateX(23px);
+    background: rgb(223, 216, 8);
+  }
+  
+  .switchBox{
+      display: flex;
+      width: 100%;
+      justify-content: space-between;
+      padding: 0.4rem;
+      color: rgb(96, 96, 96);
+      text-transform: capitalize;
+      align-items: center;
+      height: 2rem;
+      
+  }
+  .switchBox h4{
+      width: 80%;
+      margin-top: 0.4rem;
+      padding-left: 1rem;
+  }
+
+  /* buttons */
+
+  .results{
+    width: 100%;
+    min-height: 30%;
+    
+  }
+  #previous{
+      width: 100%;
+      height: 40%;
+      padding: 10px;
+      font-size: 1.4rem;
+      font-weight: 500;
+      color: #333;
+      word-wrap: break-word;
+  }
+  #current{
+      width: 100%;
+      height: 60%;
+      font-size: 1.8rem;
+      font-weight: 700;
+      color: rgb(52, 52, 52);
+      padding:2rem 1rem;
+      word-wrap: break-word;
+      
+  }
+
+  /* numbers buttons */
+  .numbers-box{
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    padding:2rem 0.5rem;
+    grid-template-columns: repeat(4,1fr);
+    grid-template-rows: repeat(5,1fr);
+    grid-row-gap: 0.3rem;
+    width: 100%;
+    height: 70%;
+  }
+  
+  button{
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    outline: none;
+    border: none;
+    background: linear-gradient(145deg, #b5b5b5, #d7d7d7);
+    box-shadow:  18px 18px 65px #a1a1a1,
+             -18px -18px 65px #f1f1f1;
+    font-size: 1.3rem;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: 0.4s ease;
+    margin-left: 20%;
+  }
+  button:hover{
+    background: rgba(0, 0, 0, 0.122);
+  }
+  .operation{
+    background: linear-gradient(145deg, #bdcb7b, #e1f193);
+  }
+  .operation:hover{
+    background: #bfcc7b90;
+  }
+
+  #result{
+    background: linear-gradient(145deg, #80d354, #98fa64);
+  }
+  #clear{
+    background: linear-gradient(145deg, #d35454, #fa6464);
+  }
